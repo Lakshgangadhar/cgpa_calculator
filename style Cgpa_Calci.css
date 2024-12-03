@@ -1,0 +1,208 @@
+/* General body styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    gap: 100px;
+  }
+  
+  /* Container for the content */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  /* Ads Section */
+  .ads-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .ad-banner {
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+  }
+  
+  .ad-banner iframe {
+    border: none;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Header styling */
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  
+  table th {
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  table input,
+  table select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 90%;
+    box-sizing: border-box;
+  }
+  
+  table button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  /* Buttons */
+  button {
+    margin: 10px 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    transform: scale(1);
+  }
+  
+  /* Specific styling for download buttons */
+  .download-btn {
+    display: none;
+  }
+  
+  /* Result display */
+  #result {
+    margin-top: 20px;
+    font-size: 1.8em;
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  /* Remove row button */
+  .removeRow {
+    background-color: #ff4d4d;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .removeRow:hover {
+    background-color: #e63939;
+    transform: scale(1.1);
+  }
+  
+  .removeRow:active {
+    transform: scale(1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    body {
+      flex-direction: column;
+    }
+    table th,
+    table td {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    input,
+    select {
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  
+    .removeRow {
+      width: 35px;
+      height: 35px;
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 1.8em;
+    }
+  
+    #result {
+      font-size: 1.4em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 15px;
+    }
+  
+    table {
+      font-size: 0.9em;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 8px 12px;
+    }
+  
+    #result {
+      font-size: 1.2em;
+    }
+  }
